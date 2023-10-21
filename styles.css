@@ -1,24 +1,56 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 0;
 }
 
-/*Importando o arquivo com cores*/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  outline: 0;
+header {
+  background: url("../images/Void---banner.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: purple;
+  height: 100vh;
+  max-width: 100%;
+  min-width: 30%;
+  position: relative;
 }
 
-:root {
-  --lexend: "Lexend", sans-serif;
+div.box-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
 }
 
+#logo-header {
+  max-width: 30%;
+}
+
+#infinity {
+  max-width: 5%;
+}
+
+div.box-text > h3 {
+  color: #FFF;
+  font-size: 0.9rem;
+  letter-spacing: 2.4px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  #logo-header {
+    margin-top: 20%;
+    max-width: 70%;
+    min-height: 30%;
+  }
+  #infinity {
+    max-width: 20%;
+  }
+}
 menu {
   display: flex;
   justify-content: end;
@@ -70,7 +102,6 @@ menu {
   color: #818181;
   display: block;
   font-size: 2rem;
-  font-family: var(--lexend);
   transition: 0.3s;
 }
 
@@ -94,7 +125,6 @@ menu {
     margin-bottom: 2rem;
   }
   #nav-desktop a {
-    font-family: var(--lexend);
     color: white;
     text-decoration: none;
     margin-right: 20px;
@@ -111,13 +141,60 @@ menu {
   padding: 0 8px;
 }
 
-::-webkit-scrollbar {
-  width: 8px;
+#description {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  display: flex;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #E97000;
-  border-radius: 20px;
+#description > p {
+  margin: 5%;
+  margin-top: 7%;
+  margin-left: 10%;
+  width: 30%;
+  float: left;
+  font-family: "Montserrat", sans-serif;
+}
+
+#astronaut-description {
+  display: block;
+  max-width: 30%;
+  float: right;
+  margin-left: 15%;
+}
+
+.services {
+  background-color: #141414;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  font-family: "Montserrat", sans-serif;
+}
+.services .container-jobs {
+  display: flex;
+  flex-direction: row;
+}
+.services .icon-services {
+  max-width: 15%;
+  display: block;
+  margin: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.services h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.services .jobs {
+  padding: 10px;
+  margin: 20px;
+  width: 25%;
+  flex-direction: row;
+}
+.services #video, .services #design, .services #landing-page {
+  border-right: 2px solid white;
 }
 
 html {
@@ -125,14 +202,11 @@ html {
 }
 
 body {
-  font-family: "Sora", sans-serif;
   position: relative;
-  background-color: #141414;
 }
 
 button {
   cursor: pointer;
-  font-family: "Sora", sans-serif;
 }
 
 img {

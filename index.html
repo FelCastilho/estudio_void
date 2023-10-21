@@ -7,17 +7,37 @@
     <link rel="stylesheet" href="styles.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Saira&family=Saira+Semi+Condensed&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
+        <menu class="menu">
+            <nav id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                
+                <div class="overlay-content">
+                    <ul>
+                        <a href="#description">Sobre nós</a>
+                        <a href="#planos">Planos</a>
+                        <a href="#contact">Contato</a>
+                    </ul>
+                </div>
+            </nav>
+            
+            <i class="fa-solid fa-bars fa-2x" id="btn-open" onclick="openNav()"></i>
+        </menu>
                         
         <div class="box-text">
 
             <nav id="nav-desktop">
 
-                <a href="portfolio/portfolio.html">Portfólio</a>
-                <a href="Planos/planos.html">Planos</a>
-                <a href="contato/contato.html">Contato</a>
+                <a href="#description">Sobre nós</a>
+                <a href="#planos">Planos</a>
+                <a href="#contact">Contato</a>
                 
             </nav>
 
@@ -25,11 +45,80 @@
 
             <h3>POSSIBILIDADES INFINITAS</h3>
             
-            <img src="images/icons/infinity 1.png" alt="" id="infinity">
+            <img src="images/icons/infinity - icon.svg" alt="Simbolo do infinito" id="infinity">
     
         </div>
-
-
+        
     </header>
+
+    <main>
+
+        <section id="description">
+            
+            <p>
+                OOO <br>
+                <strong>Void</strong> significa espaço em branco 
+                ou <strong>possibilidades infinitas</strong>, 
+                nesse contexto, nossa empresa 
+                tem uma abordagem criativa 
+                e flexível, capaz de preencher 
+                esse espaço com soluções 
+                <strong>inovadoras</strong> e estratégias.
+            </p>
+
+            <img src="images/astronaut---description.png" alt="Imagem de um astronauta flutuando" id="astronaut-description">
+            
+        </section>
+
+        <section class="services" id="services">
+
+            <div class="container container-jobs">
+
+                <div id="video" class="jobs">
+                
+                    <img src="images/icons/edição de video - icon.png" alt="Icone de video" class="icon-services">
+                
+                    <h2>Edição de vídeo</h2>
+
+                    <p>Nossa equipe está pronta para dar vida aos seus projetos,seja para anúncios, vídeos promocionais, tutoriais, depoimentos ou qualquer outro tipo de conteúdo em vídeo que você precise.</p>
+
+                </div>
+                
+                <div id="design" class="jobs">
+                
+                    <img src="images/icons/design - icon.png" alt="Icone de pincel" class="icon-services">
+
+                    <h2>Design</h2>
+
+                    <p>Nossa equipe de design está pronta para transformar suas ideias em elementos visuais 
+                    impressionantes e impactantes.</p>
+
+                </div>
+                
+                <div id="landing-page" class="jobs">
+
+                    <img src="images/icons/Lading Page - Icon.png" alt="Icone de folha" class="icon-services">
+
+                    <h2>Landing-page</h2>
+
+                    <p>Nossa equipe está pronta para dar vida aos seus projetos,seja para anúncios, vídeos promocionais, tutoriais, depoimentos ou qualquer outro tipo de conteúdo em vídeo que você precise.</p>
+                </div>
+
+                <div id="social-media" class="jobs">
+                
+                    <img src="images/icons/message-circle.png" alt="Icone de balão de conversa" class="icon-services">
+
+                    <h2>Social Media</h2>
+
+                    <p>Combinamos habilidades de redação persuasiva, design visual atraente e uma compreensão profunda das tendênciase melhores práticas das mídias sociais.</p>
+                
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="scripts/mobileMenu.js"></script>
 </body>
 </html>
