@@ -5,7 +5,7 @@
 }
 
 header {
-  background: url("../images/Void---banner.png") no-repeat;
+  background: url("images/Void---banner.png") no-repeat;
   background-size: cover;
   background-position: center;
   background-color: purple;
@@ -197,6 +197,48 @@ menu {
   border-right: 2px solid white;
 }
 
+@media screen and (max-width: 768px) {
+  #description > p {
+    margin: 5%;
+    margin-top: 7%;
+    margin-left: 10%;
+    width: 80%;
+    float: left;
+    font-family: "Montserrat", sans-serif;
+  }
+  #astronaut-description {
+    display: none;
+  }
+  .services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .services .container-jobs {
+    display: flex;
+    flex-direction: column;
+  }
+  .services .icon-services {
+    max-width: 20%;
+  }
+  .services h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .services p {
+    padding-bottom: 100px;
+  }
+  .services .jobs {
+    margin: 20px;
+    width: 90%;
+    flex-direction: row;
+  }
+  .services #video, .services #design, .services #landing-page {
+    border-right: 0px;
+    border-bottom: 2px solid white;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
