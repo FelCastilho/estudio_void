@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Saira:wght@400;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -197,6 +198,245 @@ menu {
   border-right: 2px solid white;
 }
 
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.comments h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-family: "Saira", sans-serif;
+  font-size: 25px;
+}
+.comments .container-comments {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+}
+.comments .box-comment {
+  background-color: #5B21B6;
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+}
+.comments .box-comment img {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  max-width: 25%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.comments .box-comment h2 {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  text-align: center;
+  font-family: "Saira", sans-serif;
+}
+.comments .box-comment p {
+  margin-bottom: 15%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.planos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #181818;
+}
+.planos h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 100px;
+  font-family: "Saira", sans-serif;
+  font-size: 25px;
+}
+.planos .container-planos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 60px;
+}
+.planos .box-planos {
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+}
+.planos i {
+  margin-right: 10px;
+}
+.planos .void {
+  background-color: white;
+}
+.planos .void h2 {
+  color: #5B21B6;
+  text-align: center;
+  font-family: "Saira", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.planos .void h3 {
+  color: #5B21B6;
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.planos .void p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #181818;
+  margin-top: 20px;
+}
+.planos .void hr {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  border: 2px solid #5B21B6;
+  border-radius: 10px;
+}
+.planos .void .link-btn {
+  width: 40%;
+  background-color: red;
+}
+.planos .void .link-text:hover {
+  opacity: 50%;
+}
+.planos .void button {
+  display: block;
+  margin: auto;
+  font-family: "Saira", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #5B21B6;
+  border: 3px solid #5B21B6;
+  border-radius: 7px;
+  color: #fff;
+  padding: 10px;
+  width: 60%;
+  transition: 0.4s;
+}
+.planos .void button:hover {
+  background-color: #fff;
+  color: #5B21B6;
+}
+.planos .constelacao {
+  background-color: #5B21B6;
+}
+.planos .constelacao h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Saira", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.planos .constelacao h3 {
+  color: #fff;
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.planos .constelacao p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 20px;
+}
+.planos .constelacao hr {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.planos .constelacao .link-btn {
+  width: 40%;
+  background-color: red;
+}
+.planos .constelacao .link-text:hover {
+  opacity: 50%;
+}
+.planos .constelacao button {
+  display: block;
+  margin: auto;
+  font-family: "Saira", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 7px;
+  color: #5B21B6;
+  padding: 10px;
+  width: 60%;
+  transition: 0.4s;
+}
+.planos .constelacao button:hover {
+  background-color: #5B21B6;
+  color: #fff;
+}
+.planos .supernova {
+  background-color: white;
+}
+.planos .supernova h2 {
+  color: #5B21B6;
+  text-align: center;
+  font-family: "Saira", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+.planos .supernova h3 {
+  color: #5B21B6;
+  font-size: 45px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.planos .supernova p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #181818;
+  margin-top: 20px;
+}
+.planos .supernova hr {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  border: 2px solid #5B21B6;
+  border-radius: 10px;
+}
+.planos .supernova .link-btn {
+  width: 40%;
+  background-color: red;
+}
+.planos .supernova .link-text:hover {
+  opacity: 50%;
+}
+.planos .supernova button {
+  display: block;
+  margin: auto;
+  font-family: "Saira", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #5B21B6;
+  border: 3px solid #5B21B6;
+  border-radius: 7px;
+  color: #fff;
+  padding: 10px;
+  width: 60%;
+  transition: 0.4s;
+}
+.planos .supernova button:hover {
+  background-color: #fff;
+  color: #5B21B6;
+}
+
 @media screen and (max-width: 768px) {
   #description > p {
     margin: 5%;
@@ -237,6 +477,47 @@ menu {
   .services #video, .services #design, .services #landing-page {
     border-right: 0px;
     border-bottom: 2px solid white;
+  }
+  .comments {
+    height: 100%;
+  }
+  .comments h1 {
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    font-family: "Saira", sans-serif;
+    font-size: 25px;
+  }
+  .comments .container-comments {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+  }
+  .comments .box-comment {
+    background-color: #5B21B6;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    color: white;
+    border-radius: 20px;
+  }
+  .comments .box-comment img {
+    display: block;
+    margin: auto;
+    margin-top: 3px;
+    max-width: 25%;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+  .comments .box-comment h2 {
+    margin-top: 15%;
+    margin-bottom: 15%;
+    text-align: center;
+  }
+  .comments .box-comment p {
+    margin-bottom: 15%;
   }
 }
 html {

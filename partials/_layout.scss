@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Saira:wght@400;600;700&display=swap');
+
 .container{
     max-width: 1440px;
     margin: 0 auto;
@@ -66,6 +69,286 @@
 
 }
 
+.comments{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    h1{
+        text-align: center;
+        margin-bottom: 100px;
+        font-family: 'Saira', sans-serif;
+        font-size: 25px;
+    }
+
+    .container-comments{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .box-comment{
+        background-color: #5B21B6;
+        width: 300px;
+        height: 450px;
+        padding: 20px;
+        color: white;
+        border-radius: 20px;
+
+        img{
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            max-width: 25%;
+            border: 3px solid white;
+            border-radius: 50%;
+        }
+
+        h2{
+            margin-top: 15%;
+            margin-bottom: 15%;
+            text-align: center;
+            font-family: 'Saira', sans-serif;
+        }
+
+        p{
+            margin-bottom: 15%;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+}
+
+.planos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #181818;
+
+    h1{
+        color: white;
+        text-align: center;
+        margin-bottom: 100px;
+        font-family: 'Saira', sans-serif;
+        font-size: 25px;
+    }
+
+    .container-planos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .box-planos{
+        width: 300px;
+        height: 100%;
+        padding: 20px;
+        color: white;
+        border-radius: 20px;
+    }
+
+    i{
+        margin-right: 10px;
+    }
+
+    .void{
+
+        background-color: white;
+
+        h2{
+            color: $purple;
+            text-align: center;
+            font-family: 'Saira', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            
+        }
+
+        h3{
+            color: $purple;
+            font-size: 45px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: $dark-1;
+            margin-top: 20px;
+        }
+
+        hr{
+            margin-top: 50px;
+            margin-bottom: 40px;
+            border: 2px solid $purple;
+            border-radius: 10px;
+        }
+
+        .link-btn{
+            width: 40%;
+            background-color: red;
+        }
+    
+        .link-text:hover{
+            opacity: 50%;
+        }
+    
+        button{
+            display: block;
+            margin: auto;
+            font-family: 'Saira', sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: $purple;
+            border: 3px solid $purple;
+            border-radius: 7px;
+            color: $white-normal;
+            padding: 10px;
+            width: 60%;
+            transition: 0.4s;
+        }
+    
+        button:hover{
+            background-color: $white-normal;
+            color: $purple;
+        }
+    }
+
+    .constelacao{
+        background-color: $purple;
+
+        h2{
+            color: $white-normal;
+            text-align: center;
+            font-family: 'Saira', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            
+        }
+
+        h3{
+            color: $white-normal;
+            font-size: 45px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: $white-normal;
+            margin-top: 20px;
+        }
+
+        hr{
+            margin-top: 50px;
+            margin-bottom: 40px;
+            border: 2px solid $white-normal;
+            border-radius: 10px;
+        }
+
+        .link-btn{
+            width: 40%;
+            background-color: red;
+        }
+    
+        .link-text:hover{
+            opacity: 50%;
+        }
+    
+        button{
+            display: block;
+            margin: auto;
+            font-family: 'Saira', sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: $white-normal;
+            border: 3px solid $white-normal;
+            border-radius: 7px;
+            color: $purple;
+            padding: 10px;
+            width: 60%;
+            transition: 0.4s;
+        }
+    
+        button:hover{
+            background-color: $purple;
+            color: $white-normal;
+        }
+    }
+
+    .supernova{
+        background-color: white;
+
+        h2{
+            color: $purple;
+            text-align: center;
+            font-family: 'Saira', sans-serif;
+            font-weight: bold;
+            font-size: 30px;
+            
+        }
+
+        h3{
+            color: $purple;
+            font-size: 45px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+        }
+
+        p{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            color: $dark-1;
+            margin-top: 20px;
+        }
+
+        hr{
+            margin-top: 50px;
+            margin-bottom: 40px;
+            border: 2px solid $purple;
+            border-radius: 10px;
+        }
+
+        .link-btn{
+            width: 40%;
+            background-color: red;
+        }
+    
+        .link-text:hover{
+            opacity: 50%;
+        }
+    
+        button{
+            display: block;
+            margin: auto;
+            font-family: 'Saira', sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: $purple;
+            border: 3px solid $purple;
+            border-radius: 7px;
+            color: $white-normal;
+            padding: 10px;
+            width: 60%;
+            transition: 0.4s;
+        }
+    
+        button:hover{
+            background-color: $white-normal;
+            color: $purple;
+        }
+    }
+}
+
 
 @media screen and (max-width: 768px){
 
@@ -117,6 +400,57 @@
         }
     
     }
+
+    .comments{
+        height: 100%;
+    
+        h1{
+            text-align: center;
+            margin-bottom: 100px;
+            margin-top: 100px;
+            font-family: 'Saira', sans-serif;
+            font-size: 25px;
+        }
+    
+        .container-comments{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            gap: 60px;
+        }
+    
+        .box-comment{
+            background-color: #5B21B6;
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            color: white;
+            border-radius: 20px;
+    
+            img{
+                display: block;
+                margin: auto;
+                margin-top: 3px;
+                max-width: 25%;
+                border: 3px solid white;
+                border-radius: 50%;
+            }
+    
+            h2{
+                margin-top: 15%;
+                margin-bottom: 15%;
+                text-align: center;
+            }
+    
+            p{
+                margin-bottom: 15%;
+
+            }
+        }
+    }
+
+    
 }
 
 
