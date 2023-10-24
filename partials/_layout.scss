@@ -88,7 +88,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        gap: 60px;
+        gap: 120px;
     }
 
     .box-comment{
@@ -447,7 +447,29 @@ footer{
         justify-content: space-around;
 
         .about-footer{
+            width: 23%;
+        }
+
+        .redes-sociais{
+
             width: 25%;
+            h1{
+                margin-bottom: 10px;
+            }
+            
+            a{
+                width: 100%;
+                transition: 1.2s;
+                width: 100%;
+                margin-right: 2%;
+                margin-left: 2%;
+                text-decoration: none;
+            }
+        
+        }
+
+        .footer-logo{
+            width: 15%;
         }
 
         p{
@@ -456,7 +478,7 @@ footer{
     }
 
     img{
-        max-width: 90%;
+        max-width: 100%;
     }
 
     i{
@@ -471,25 +493,7 @@ footer{
         transform: rotate(180deg);
     }
 
-    .redes-sociais{
-        max-width: 50%;
-        gap: 24px;
-        
-        h1{
-            font-size: 1.7rem;
-            margin-bottom: 20px;
-        }
-        
-        a{
-            width: 100%;
-            transition: 1.2s;
-            width: 100%;
-            margin-right: 2%;
-            margin-left: 2%;
-            text-decoration: none;
-        }
     
-    }
 
     .credits{
         

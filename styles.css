@@ -216,7 +216,7 @@ menu {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 60px;
+  gap: 120px;
 }
 .comments .box-comment {
   background-color: #5B21B6;
@@ -521,13 +521,30 @@ footer .footer-items {
   justify-content: space-around;
 }
 footer .footer-items .about-footer {
+  width: 23%;
+}
+footer .footer-items .redes-sociais {
   width: 25%;
+}
+footer .footer-items .redes-sociais h1 {
+  margin-bottom: 10px;
+}
+footer .footer-items .redes-sociais a {
+  width: 100%;
+  transition: 1.2s;
+  width: 100%;
+  margin-right: 2%;
+  margin-left: 2%;
+  text-decoration: none;
+}
+footer .footer-items .footer-logo {
+  width: 15%;
 }
 footer .footer-items p {
   color: #d4d4d4;
 }
 footer img {
-  max-width: 90%;
+  max-width: 100%;
 }
 footer i {
   border: 2px solid #fff;
@@ -538,22 +555,6 @@ footer i {
 }
 footer i:hover {
   transform: rotate(180deg);
-}
-footer .redes-sociais {
-  max-width: 50%;
-  gap: 24px;
-}
-footer .redes-sociais h1 {
-  font-size: 1.7rem;
-  margin-bottom: 20px;
-}
-footer .redes-sociais a {
-  width: 100%;
-  transition: 1.2s;
-  width: 100%;
-  margin-right: 2%;
-  margin-left: 2%;
-  text-decoration: none;
 }
 footer .credits a {
   color: #E97000;
