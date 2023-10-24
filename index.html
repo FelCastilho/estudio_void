@@ -158,9 +158,9 @@
 
         </section>
 
-        <section class="planos">
+        <section class="planos" id="planos">
 
-            <h1>Confira alguns comentários:</h1>
+            <h1>Confira nossos planos:</h1>
 
             <div class="container container-planos">
 
@@ -186,7 +186,7 @@
 
                 <div class="constelacao box-planos">
 
-                    <h2>Constelação</h2>
+                    <h2>CONSTELAÇÃO</h2>
                     <p><small>a partir de:</small></p>
                     <h3>R$ 650,00</h3>
 
@@ -212,9 +212,9 @@
 
                 <div class="supernova box-planos">
 
-                    <h2>Supernova</h2>
+                    <h2>SUPERNOVA</h2>
                     <p><small>a partir de:</small></p>
-                    <h3>R$ 490,00</h3>
+                    <h3>R$ 1150,00</h3>
 
                     <div class="our-services">
 
@@ -241,7 +241,66 @@
 
         </section>
 
+        <section class="contact" id="contact-area">
+
+            <img src="images/IMG - Contact.svg" alt="homem segurando carta">
+
+            <form action="https://formsubmit.co/castfelipe10@gmail.com" method="POST" class="form">
+
+                <h1>Entre em contato:</h1>
+
+                <label for="name"></label>
+                <input type="text" name="name" id="name" required placeholder="Seu nome aqui">
+        
+                <label for="email"></label>
+                <input type="email" name="email" id="email" required placeholder="Seu email aqui">
+        
+                <label for="message"></label>
+                <textarea name="message" placeholder="Digite sua mensagem aqui" id="message" cols="30" rows="10"></textarea>
+        
+                <input type="hidden" name="_captcha" value="false">
+           
+                <input type="hidden" name="_next" value="https://felcastilho.github.io/felipe-castilho/contact/thanks.html">
+               
+                <button type="submit" onclick="send()">Enviar</button>
+           </form>
+        </section>
+
     </main>
+
+    <footer>
+
+        <div class="footer-items container">
+
+            <div class="about-footer">
+                <h1>Sobre nós</h1>
+                <p>Somos um estúdio digital focado em
+                alavancar sua marca e seu negócio digital.</p>
+            </div>
+
+            <div class="footer-logo">
+                <img src="images/logo-void-footer.svg" alt="Logo empresa Void">
+            </div>
+
+            <div class="redes-sociais">
+
+                <h1>Nossas redes sociais:</h1>
+
+                <a href="https://www.behance.net/felipecoutinho10" target="_blank"><i class="fa-brands fa-behance" style="color: #ffffff;" id="behance"></i></a>
+
+                <a href="https://www.linkedin.com/in/felipe-coutinho-141354243/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;" id="linkedin"></i></a>
+
+                <a href="https://www.instagram.com/felipec_castilho/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;" id="instagram"></i></a>
+
+                <a href="https://github.com/FelCastilho" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+            </div>
+
+            
+        </div>
+        <div class="credits">
+            <p>Todos os direitos reservados | Site feito por <strong><a href="#">Felipe Castilho</a></strong></p>
+        </div>
+    </footer>
 
     <script src="scripts/mobileMenu.js"></script>
 </body>
