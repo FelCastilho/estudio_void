@@ -2,7 +2,6 @@ header{
     background: url('images/Void---banner.png') no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: purple;
 
     height: 100vh;
     max-width: 100%;
@@ -27,15 +26,19 @@ div.box-text{
 
 #infinity{
     max-width: 5%;
+    cursor: pointer;
 }
 
 div.box-text > h3{
     color: #FFF;
     font-size: .9rem;
     letter-spacing: 2.4px;
-    margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+nav a {
+    font-family: 'Saira', sans-serif;
 }
 
 @media screen and (max-width: 768px){

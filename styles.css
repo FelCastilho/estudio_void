@@ -9,7 +9,6 @@ header {
   background: url("images/Void---banner.png") no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: purple;
   height: 100vh;
   max-width: 100%;
   min-width: 30%;
@@ -31,15 +30,19 @@ div.box-text {
 
 #infinity {
   max-width: 5%;
+  cursor: pointer;
 }
 
 div.box-text > h3 {
   color: #FFF;
   font-size: 0.9rem;
   letter-spacing: 2.4px;
-  margin-top: 2rem;
   margin-bottom: 2rem;
   font-family: "Montserrat", sans-serif;
+}
+
+nav a {
+  font-family: "Saira", sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -123,12 +126,12 @@ menu {
   #nav-desktop {
     display: block;
     margin-top: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   #nav-desktop a {
     color: white;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 40px;
     font-size: 1.2rem;
     transition: 0.7s;
   }
@@ -136,6 +139,16 @@ menu {
     color: #818181;
   }
 }
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5B21B6;
+  border-radius: 20px;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -268,7 +281,7 @@ menu {
   gap: 60px;
 }
 .planos .box-planos {
-  width: 300px;
+  width: 350px;
   height: 100%;
   padding: 25px;
   color: white;
@@ -306,7 +319,7 @@ menu {
   border-radius: 10px;
 }
 .planos .void .link-btn {
-  width: 40%;
+  width: 60%;
   background-color: red;
 }
 .planos .void .link-text:hover {
@@ -323,7 +336,7 @@ menu {
   border-radius: 7px;
   color: #fff;
   padding: 10px;
-  width: 60%;
+  width: 100%;
   transition: 0.4s;
 }
 .planos .void button:hover {
@@ -360,7 +373,6 @@ menu {
 }
 .planos .constelacao .link-btn {
   width: 40%;
-  background-color: red;
 }
 .planos .constelacao .link-text:hover {
   opacity: 50%;
@@ -376,7 +388,7 @@ menu {
   border-radius: 7px;
   color: #5B21B6;
   padding: 10px;
-  width: 60%;
+  width: 100%;
   transition: 0.4s;
 }
 .planos .constelacao button:hover {
@@ -413,7 +425,6 @@ menu {
 }
 .planos .supernova .link-btn {
   width: 40%;
-  background-color: red;
 }
 .planos .supernova .link-text:hover {
   opacity: 50%;
@@ -429,7 +440,7 @@ menu {
   border-radius: 7px;
   color: #fff;
   padding: 10px;
-  width: 60%;
+  width: 100%;
   transition: 0.4s;
 }
 .planos .supernova button:hover {
@@ -452,6 +463,7 @@ menu {
   width: 100%;
   max-width: 32rem;
   font-size: 1.125rem;
+  font-family: "Saira", sans-serif;
 }
 .contact .form > h1 {
   text-align: center;
@@ -540,6 +552,9 @@ footer .footer-items .redes-sociais a {
 footer .footer-items .footer-logo {
   width: 15%;
 }
+footer .footer-items #logo-footer-mobile {
+  display: none;
+}
 footer .footer-items p {
   color: #d4d4d4;
 }
@@ -555,6 +570,11 @@ footer i {
 }
 footer i:hover {
   transform: rotate(180deg);
+}
+footer .credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer .credits a {
   color: #E97000;
@@ -661,6 +681,74 @@ footer .credits p {
   }
   .contact img {
     display: none;
+  }
+  footer {
+    height: 100%;
+  }
+  footer h1 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  footer .footer-items {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer-items .about-footer {
+    width: 100%;
+  }
+  footer .footer-items .redes-sociais {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+  footer .footer-items .redes-sociais a {
+    width: 100%;
+    transition: 1.2s;
+    width: 100%;
+    margin-right: 2%;
+    margin-left: 2%;
+    text-decoration: none;
+  }
+  footer .footer-items .footer-logo {
+    width: 15%;
+    display: none;
+  }
+  footer .footer-items #logo-footer-mobile {
+    display: block;
+    margin: auto;
+    max-width: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  footer .footer-items p {
+    color: #d4d4d4;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    width: 90%;
+  }
+  footer i {
+    border: 2px solid #fff;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    transition: 1.2s;
+  }
+  footer i:hover {
+    transform: rotate(180deg);
+  }
+  footer .credits {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #181818;
+  }
+  footer .credits a {
+    color: #E97000;
+  }
+  footer .credits p {
+    text-align: center;
+    font-size: 1rem;
   }
 }
 html {

@@ -147,7 +147,7 @@
     }
 
     .box-planos{
-        width: 300px;
+        width: 350px;
         height: 100%;
         padding: 25px;
         color: white;
@@ -157,7 +157,7 @@
     i{
         margin-right: 10px;
     }
-
+    
     .void{
 
         background-color: white;
@@ -193,7 +193,7 @@
         }
 
         .link-btn{
-            width: 40%;
+            width: 60%;
             background-color: red;
         }
     
@@ -212,7 +212,7 @@
             border-radius: 7px;
             color: $white-normal;
             padding: 10px;
-            width: 60%;
+            width: 100%;
             transition: 0.4s;
         }
     
@@ -257,7 +257,6 @@
 
         .link-btn{
             width: 40%;
-            background-color: red;
         }
     
         .link-text:hover{
@@ -275,7 +274,7 @@
             border-radius: 7px;
             color: $purple;
             padding: 10px;
-            width: 60%;
+            width: 100%;
             transition: 0.4s;
         }
     
@@ -320,7 +319,6 @@
 
         .link-btn{
             width: 40%;
-            background-color: red;
         }
     
         .link-text:hover{
@@ -338,7 +336,7 @@
             border-radius: 7px;
             color: $white-normal;
             padding: 10px;
-            width: 60%;
+            width: 100%;
             transition: 0.4s;
         }
     
@@ -366,6 +364,7 @@
         width: 100%;
         max-width: 32rem;
         font-size: 1.125rem;  
+        font-family: 'Saira', sans-serif;
     }
     
     .form > h1{
@@ -453,6 +452,7 @@ footer{
         .redes-sociais{
 
             width: 25%;
+
             h1{
                 margin-bottom: 10px;
             }
@@ -470,6 +470,10 @@ footer{
 
         .footer-logo{
             width: 15%;
+        }
+
+        #logo-footer-mobile{
+            display: none;
         }
 
         p{
@@ -493,10 +497,10 @@ footer{
         transform: rotate(180deg);
     }
 
-    
-
     .credits{
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
         a{
             color: #E97000;
         }
@@ -630,6 +634,92 @@ footer{
 
     .contact img{
         display: none;
+    }
+
+    footer{
+        height: 100%;
+
+        h1{
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            padding: 10px;
+        }
+
+        .footer-items{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            display: flex;
+            flex-direction: column;
+    
+            .about-footer{
+                width: 100%;
+            }
+    
+            .redes-sociais{
+                padding-bottom: 20px;
+                width: 100%;
+                            
+                a{
+                    width: 100%;
+                    transition: 1.2s;
+                    width: 100%;
+                    margin-right: 2%;
+                    margin-left: 2%;
+                    text-decoration: none;
+                }
+            
+            }
+    
+            .footer-logo{
+                width: 15%;
+                display: none;
+            }
+
+            #logo-footer-mobile{
+                display: block;
+                margin: auto;
+                max-width: 30%;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+    
+            p{
+                color: #d4d4d4;
+                padding-bottom: 20px;
+                padding-left: 10px;
+                width: 90%;
+            }
+        }
+    
+    
+        i{
+            border: 2px solid $white-normal;
+            padding: 10px;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            transition: 1.2s;
+        }
+    
+        i:hover{
+            transform: rotate(180deg);
+        }
+        
+        .credits{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: $dark-1;
+            a{
+                color: #E97000;
+            }
+    
+            p{
+                text-align: center;
+                font-size: 1rem;
+            }
+      
+        }
+       
+        
     }
     
 }
