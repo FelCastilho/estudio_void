@@ -168,6 +168,7 @@ menu {
   width: 30%;
   float: left;
   font-family: "Montserrat", sans-serif;
+  visibility: hidden;
 }
 
 #astronaut-description {
@@ -175,6 +176,7 @@ menu {
   max-width: 30%;
   float: right;
   margin-left: 15%;
+  visibility: hidden;
 }
 
 .services {
@@ -217,6 +219,9 @@ menu {
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+.comments .first-comment, .comments .second-comment, .comments .third-comment {
+  visibility: hidden;
 }
 .comments h1 {
   text-align: center;
@@ -263,12 +268,13 @@ menu {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%;
   background-color: #181818;
 }
 .planos h1 {
   color: white;
   text-align: center;
+  margin-top: 50px;
   margin-bottom: 50px;
   font-family: "Saira", sans-serif;
   font-size: 25px;
@@ -282,7 +288,7 @@ menu {
 }
 .planos .box-planos {
   width: 350px;
-  height: 100%;
+  height: 80vh;
   padding: 25px;
   color: white;
   border-radius: 20px;
@@ -290,8 +296,40 @@ menu {
 .planos i {
   margin-right: 10px;
 }
+.planos .link-btn-personalizado {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  width: 20%;
+}
+.planos .link-btn-personalizado .link-text:hover {
+  opacity: 50%;
+}
+.planos .link-btn-personalizado button {
+  gap: 40px;
+  display: block;
+  margin: auto;
+  font-family: "Saira", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: 7px;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  transition: 0.4s;
+}
+.planos .link-btn-personalizado button i {
+  color: white;
+  margin-left: 10px;
+}
+.planos .link-btn-personalizado button:hover {
+  background-color: #fff;
+  color: #181818;
+}
 .planos .void {
   background-color: white;
+  visibility: hidden;
 }
 .planos .void h2 {
   color: #5B21B6;
@@ -345,6 +383,7 @@ menu {
 }
 .planos .constelacao {
   background-color: #5B21B6;
+  visibility: hidden;
 }
 .planos .constelacao h2 {
   color: #fff;
@@ -397,6 +436,7 @@ menu {
 }
 .planos .supernova {
   background-color: white;
+  visibility: hidden;
 }
 .planos .supernova h2 {
   color: #5B21B6;
@@ -458,6 +498,9 @@ menu {
 }
 .contact img {
   width: 40%;
+}
+.contact #contact-img {
+  visibility: hidden;
 }
 .contact .form {
   width: 100%;
@@ -548,6 +591,9 @@ footer .footer-items .redes-sociais a {
   margin-right: 2%;
   margin-left: 2%;
   text-decoration: none;
+}
+footer .footer-items #instagram, footer .footer-items #behance, footer .footer-items #linkedin, footer .footer-items #github {
+  visibility: hidden;
 }
 footer .footer-items .footer-logo {
   width: 15%;

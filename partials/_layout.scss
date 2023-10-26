@@ -20,6 +20,7 @@
     width: 30%;
     float: left;
     font-family: 'Montserrat', sans-serif;
+    visibility: hidden;
 }
 
 #astronaut-description{
@@ -27,6 +28,7 @@
     max-width: 30%;
     float: right;
     margin-left: 15%;
+    visibility: hidden;
 }
 
 .services{
@@ -75,6 +77,11 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+
+    .first-comment, .second-comment, .third-comment{
+        visibility: hidden;
+    }
+
 
     h1{
         text-align: center;
@@ -127,12 +134,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     background-color: #181818;
 
     h1{
         color: white;
         text-align: center;
+        margin-top: 50px;
         margin-bottom: 50px;
         font-family: 'Saira', sans-serif;
         font-size: 25px;
@@ -148,7 +156,7 @@
 
     .box-planos{
         width: 350px;
-        height: 100%;
+        height: 80vh;
         padding: 25px;
         color: white;
         border-radius: 20px;
@@ -157,10 +165,50 @@
     i{
         margin-right: 10px;
     }
-    
-    .void{
 
+    .link-btn-personalizado{
+            margin-top: 60px;
+            margin-bottom: 60px;
+            width: 20%;
+        
+    
+        .link-text:hover{
+            opacity: 50%;
+        }
+
+        button{
+            gap: 40px;
+            display: block;
+            margin: auto;
+            font-family: 'Saira', sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: transparent;
+            border: 3px solid $white-normal;
+            border-radius: 7px;
+            color: $white-normal;
+            padding: 10px;
+            width: 100%;
+            transition: 0.4s;
+
+            i{
+                color: white;
+                margin-left: 10px;
+            }
+        
+        }
+    
+        button:hover{
+            background-color: $white-normal;
+            color: $dark-1;
+        }
+
+    }
+
+    .void{
         background-color: white;
+        visibility: hidden;
+
 
         h2{
             color: $purple;
@@ -224,6 +272,8 @@
 
     .constelacao{
         background-color: $purple;
+        visibility: hidden;
+
 
         h2{
             color: $white-normal;
@@ -286,7 +336,7 @@
 
     .supernova{
         background-color: white;
-
+        visibility: hidden;
         h2{
             color: $purple;
             text-align: center;
@@ -358,6 +408,10 @@
 
     img{
         width: 40%;
+    }
+
+    #contact-img{
+        visibility: hidden;
     }
 
     .form{
@@ -468,6 +522,10 @@ footer{
         
         }
 
+        #instagram, #behance, #linkedin, #github{
+            visibility: hidden;
+        }
+
         .footer-logo{
             width: 15%;
         }
@@ -567,7 +625,7 @@ footer{
 
     .comments{
         height: 100%;
-    
+        
         h1{
             text-align: center;
             margin-bottom: 100px;
